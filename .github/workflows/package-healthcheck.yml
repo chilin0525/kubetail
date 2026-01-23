@@ -180,7 +180,7 @@ jobs:
             https://dl-cdn.alpinelinux.org/alpine/edge/testing
 
       - name: Install
-        shell: alpine.sh {0}
+        shell: alpine.sh --root {0}
         run: |
           apk add kubetail
 
