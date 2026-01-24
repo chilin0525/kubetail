@@ -258,7 +258,7 @@ jobs:
           -w
           -X github.com/kubetail-org/kubetail/modules/cli/cmd.version=dev
           "
-          go build -mod=vendor -ldflags "$ldflags" -o ../../bin/kubetail
+          go build -ldflags "$ldflags" -o ../../bin/kubetail
       - name: Verify
         shell: alpine.sh {0}
         run: |
